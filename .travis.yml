@@ -8,7 +8,7 @@ jdk:
   - openjdk9
   - openjdk11
   
-  branches:
+branches:
   only:
     - master
 
