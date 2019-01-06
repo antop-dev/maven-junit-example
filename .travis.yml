@@ -17,4 +17,4 @@ cache:
     - .autoconf
     - $HOME/.m2
 
-script: "mvn install -Dmaven.javadoc.skip=true -B -V"
+script: "mvn package -Dmaven.javadoc.skip=true -B -V"
