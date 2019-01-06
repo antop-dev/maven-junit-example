@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
+ */
 public class ApiConsumerTest {
 
 	@Test

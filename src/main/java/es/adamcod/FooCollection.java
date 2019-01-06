@@ -2,6 +2,7 @@ package es.adamcod;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FooCollection {
 	private List<Foo> list = new ArrayList<>();
@@ -15,14 +16,6 @@ public class FooCollection {
 	}
 
 	public String joined() {
-		// java 8 or later
-		// return list.stream().map(Foo::bar).collect(Collectors.joining());
-
-		// all java
-		StringBuffer sb = new StringBuffer();
-		for (int i = 0; i < list.size(); i++) {
-			sb.append(list.get(i).bar());
-		}
-		return sb.toString();
+		return list.stream().map(Foo::bar).collect(Collectors.joining());
 	}
 }
