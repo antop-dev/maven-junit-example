@@ -12,4 +12,6 @@ Java + Maven + JUnit TDD Example
 
 [How to TDD a List Implementation in Java](https://www.baeldung.com/java-test-driven-list)
 
-[Test Driven Development (TDD): Example Walkthrough](https://technologyconversations.com/2013/12/20/test-driven-development-tdd-example-walkthrough/)
+[Test Driven Development (TDD) Example Walkthrough](https://technologyconversations.com/2013/12/20/test-driven-development-tdd-example-walkthrough/)
+
+[Tutorial: Test Driven Development | IntelliJ IDEA](https://www.jetbrains.com/help/idea/tdd-with-intellij-idea.html)
