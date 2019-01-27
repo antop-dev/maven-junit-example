@@ -3,6 +3,8 @@
 ![](https://img.shields.io/github/stars/antop-dev/maven-junit-example.svg)
 ![](https://img.shields.io/github/license/antop-dev/maven-junit-example.svg)
 [![Build Status](https://travis-ci.com/antop-dev/maven-junit-example.svg?branch=master)](https://travis-ci.com/antop-dev/maven-junit-example)
+[![Coverage Status](https://coveralls.io/repos/github/antop-dev/maven-junit-example/badge.svg?branch=master)](https://coveralls.io/github/antop-dev/maven-junit-example?branch=master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=antop-dev_maven-junit-example&metric=alert_status)](https://sonarcloud.io/dashboard?id=antop-dev_maven-junit-example)
 
 # maven-junit-example
 
