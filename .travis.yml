@@ -1,17 +1,33 @@
 language: java
 
+dist: trusty
+
+addons:
+  sonarcloud:
+    organization: antop-dev-github
+
 jdk:
   - openjdk8
   - openjdk9
   - openjdk11
-  
+
 branches:
   only:
     - master
 
 cache:
   directories:
-    - .autoconf
     - $HOME/.m2
 
-script: "mvn package -Dmaven.javadoc.skip=true -B -V"
+install:
+  - mvn test-compile -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+script:
+  - mvn clean package jacoco:report
+
+after_success:
+  - mvn sonar:sonar -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.projectKey=$SONAR_PROJECT_KEY
+  - mvn coveralls:report -DrepoToken=$COVERALLS_REPO_TOKEN
+
+notifications:
+  email: false
